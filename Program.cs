@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
-using Newtonsoft.Json;
+using System.Text.Json;
 using static System.Net.Mime.MediaTypeNames;
 
 class Program
@@ -116,7 +116,7 @@ class Program
         };
         
         return new StringContent(
-            JsonConvert.SerializeObject(myData),
+            JsonSerializer.Serialize(myData),
             Encoding.UTF8,
             Application.Json
         );
