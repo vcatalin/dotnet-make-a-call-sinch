@@ -5,7 +5,6 @@ This project initiates a TTS phone/PSTN call from a Sinch rented number and says
 ## Requirements
 
 - dotnet 6 LTS
-- newtonsoft.json NuGet
 
 ## Install
 
